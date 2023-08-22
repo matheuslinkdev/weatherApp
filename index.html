@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,500;6..12,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+
+        <section class="campo-de-pesquisa">
+            <input type="text" id="inputCidade" placeholder="Pesquise a cidade">
+                <button id="buscarCidade" onclick="buttonClick()">
+                    <img src="imgs/search.svg" alt="" class="lupa-de-pesquisa">
+                </button>
+        </section>
+
+        <section class="dados-do-clima">
+            <h2 id="nomeCidade">Pesquise a cidade</h2>
+                <p class="temperatura"></p>
+                    <img src="imgs/nublado.png"  class="imagem-da-condicao">
+                    <p class="textoCondicao"></p>
+                    <p class="humidade-do-ar"></p>
+                    <span class="velocidade-do-vento"></span>
+        </section>
+
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>

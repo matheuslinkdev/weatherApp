@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?cs=srgb&dl=pexels-pixabay-209831.jpg&fm=jpg);
+    
+    object-fit: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    color: aliceblue;
+}
+
+main{
+    height: 400px;
+    width: 400px;
+
+    padding-top: 5vh;
+
+    text-align: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: rgba(15, 15, 15, 0.945);
+}
+
+.campo-de-pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputCidade{
+    height: 7vh;
+    width: 22vw;
+
+    font-size: 1.1rem;
+    padding-left: 10px;
+
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+#buscarCidade {
+
+    width: 35px;
+    height: 35px;
+    background-color: rgba(243, 243, 243, 0.705);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-top: 3px;
+    margin-left: 20px;
+}
+.lupa-de-pesquisa{ 
+    height: 30px;
+    width: 30px;
+}
+
+.dados-do-clima{
+    margin: 3vh auto;
+}
+
+#nomeCidade{
+    font-size: 1.6rem;
+}
+
+.temperatura{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 3vh;
+}
+
+.imagem-da-condicao{
+    width: 80px;
+    height: 80px;
+
+    border: none;
+}
+
+.textoCondicao{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.humidade-do-ar{
+    padding-top: 2vh;
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 767px){
+    #inputCidade{
+        width: 250px;
+    }
+
+    #buscarCidade{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+

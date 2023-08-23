@@ -103,6 +103,11 @@ main{
 
 
 @media (max-width: 767px){
+
+    main{
+        width: 350px;    
+    }
+    
     #inputCidade{
         width: 250px;
     }

@@ -8,7 +8,7 @@ async function buscarCidade(city){
       ).then((response) => response.json());
 
       if (dados.cod === "404") {
-        throw new Error("Cidade não encontrada");
+        throw new Error("City not found");
       }
       renderData(dados);
     } catch (error) {
@@ -31,10 +31,10 @@ function handleError(errorMessage) {
 }
 
 function renderData(dados){
- document.querySelector("#nomeCidade").innerHTML = "Tempo em " + dados.name + ", " + dados.sys.country;
+ document.querySelector("#nomeCidade").innerHTML = "Weather at " + dados.name + ", " + dados.sys.country;
  document.querySelector(".temperatura").innerHTML = Math.floor(dados.main.temp) + "°C";
  document.querySelector(".textoCondicao").innerHTML = dados.weather[0].description;
- document.querySelector(".humidade-do-ar").innerHTML = "Humidade do ar: " + dados.main.humidity + "%";
+ document.querySelector(".humidade-do-ar").innerHTML = "Air humidity: " + dados.main.humidity + "%";
  document.querySelector(".imagem-da-condicao").src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`
- document.querySelector(".velocidade-do-vento").innerHTML = "Vento: " + Math.floor(dados.wind.speed) + "Km/h"
+ document.querySelector(".velocidade-do-vento").innerHTML = "Wind: " + Math.floor(dados.wind.speed) + "Km/h"
 }

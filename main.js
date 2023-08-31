@@ -4,7 +4,7 @@ const searchBtn = document.getElementById("buscarCidade")
 async function buscarCidade(city){
     try {
       const dados = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang="en"&units=metric`
       ).then((response) => response.json());
 
       if (dados.cod === "404") {

@@ -1,3 +1,5 @@
-A basic wheater app using the openWeatherAPI
+<h1 align="center">WheaterApp JavaScript</h1>
 
-It was my first project using api's so he doesn't have to many features like week forecast and others
+<p align="center">Uma simples aplicação de climatempo utilizando HTML, CSS e JS, nesse projeto eu utilizei a OpenWeatherAPI</p>
+#
+<p align="center">Foi meu primeiro projeto  utilizando uma API, ele está bem básico, retornando apenas os dados do horário, nada de previsão para os próximos dias</p>
